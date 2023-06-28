@@ -1,0 +1,252 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+nav{
+    background-color: #442839;
+    width: 100%;
+    height:80px;
+    position: fixed;
+    z-index: 5;
+}
+.logo{
+  position: relative;
+  max-width: 80px;
+  box-sizing: content-box;
+  padding: 0 50px;
+  padding-top: 20px;
+
+  
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline;
+    line-height: 80px;
+    margin: 0 10px;
+}
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    padding: 7px 11px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    border-width: 0px;
+}
+a.active,
+a:hover{
+    color: #CCBEB2;
+    transition: .5s;
+}
+ .m-b{
+    margin-right: 40px;
+    float: right;
+    line-height: 80px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+@media(max-width:900px){
+    .logo {
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+
+
+    .m-b{
+        display: block;
+    }
+
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:#442839;
+    text-align: center;
+    top: 80px;
+    left:-100;
+    transition: .8s;
+}
+nav ul li {
+    display: block;
+    line-height: 40px;
+    margin: 50px 0;
+}
+
+nav ul li a {
+    font-size: 20px;
+}
+
+a:hover,a.active{
+    border: none;
+    
+}
+#click:checked ~ ul{
+    left: 0;
+}
+
+}
+section{
+    position:relative ;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #442839;
+}
+section .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #371F2F;
+    clip-path: circle(45% at right 90%);
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+.content .textbox h2{
+    color: #fff;
+    font-size: 3em;
+    margin: 0px;
+    line-height: height 1.4em;
+    font-weight: 700; 
+}
+
+.content .textbox h3{
+    color: #fff;
+    font-size: 1.7em;
+    margin: 0px;
+    line-height: height 1.4em;
+    font-weight: 700;
+}
+.content .textbox p{
+    color: #fff;
+    padding-top: 20px;
+}
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background:#CCBEB2;
+    color: #371F2F;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: .3sec;
+}
+
+.content .textbox a:hover{
+    background-color: white;
+    color: black;
+}
+strong{
+    font-size: 30px;
+    line-height: -5px;
+
+}
+.content .imgbox {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    padding-right: 50px; 
+
+}
+.content .imgbox img{
+    width: 100%;
+    transform: rotate(10deg);
+    transition: .3s;
+    
+}
+.content .imgbox img:hover{
+    transform: rotate(-10deg);
+    
+
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-70%,70%);
+    display: flex;
+}
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+    
+}
+.thumb li img {
+    max-width: 90px;
+    
+}
+.sci{
+    bottom: 29%;
+    left: 18%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci {
+    list-style: none;
+}
+.sci  a span{
+    display: inline-block;
+    margin-left: 15px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+.sci a span:hover{
+    background: #442839;
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+

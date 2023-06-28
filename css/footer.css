@@ -1,0 +1,124 @@
+footer {
+    position: relative;
+    width: 100%;
+    background-color:#CCBEB2;
+    color: #442839;
+    padding: 20px 20px 0 20px;
+}
+
+.footer-div {
+    display: flex;
+}
+
+.footer-div .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .div-content {
+    margin: 20px 0 0 0;
+}
+
+.box .div-content p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 15px;
+    
+}
+
+.left .div-content .social-icons {
+    margin: 20px 0 0 0;
+}
+
+.left .div-content .social-icons a {
+    padding: 0 5px;
+    color:#CCBEB2;
+}
+
+.left .div-content .social-icons a span {
+    height: 40px;
+    width: 40px;
+    background-color: #442839;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10%;
+    transition: .3s;
+    padding: 0 2px;
+}
+
+.left .div-content .social-icons a span:hover {
+    color: #371F2F;
+    background-color: #ffffff;
+}
+
+.right .div-content .fa {
+    height: 40px;
+    width: 40px;
+    background-color: #371F2F;
+    color: #CCBEB2;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    /* border: 2px solid #CCBEB2; */
+}
+
+
+.right .div-content .text {
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.right .div-content .phone {
+    margin: 10px 0px;
+}
+
+.center .div-content .services a {
+    display: block;
+    margin: 0 0 10px 0;
+    color:#442839;
+    transition: .3s;
+}
+
+.center .div-content .services a:hover {
+    color: #371F2F;
+}
+
+.bottom {
+    text-align: center;
+    height: 60px;
+    background-color: #CCBEB2;
+    line-height: 60px;
+}
+
+.bottom .credit {
+    font-size: 13px;
+    color: rgb(100, 100, 100);
+}
+
+.bottom .credit span {
+    color: #442839;
+}
+
+@media screen and (max-width:830px) {
+    footer {
+        position: relative;
+        bottom: 0;
+
+    }
+
+    .footer-div{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}

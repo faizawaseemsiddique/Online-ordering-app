@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: #442839;
+        }
+
+        .payment {
+            display: flex;
+            width: 90%;
+            height: 90%;
+            background-color: #fff;
+            box-shadow: 0px 0px 30px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .payment_product {
+            padding: 40px;
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            background-image: url("images/coffee\ cup\ purple.png");
+            background-size: cover;
+            color: #442839;
+        }
+
+        .payment_bill {
+            padding: 40px;
+            width: 80%;
+            height: 100%;
+        }
+
+        .price {
+            background-color: black;
+            color: #fff;
+            display: inline-block;
+            padding: 10px 30px;
+            font-size: 22px;
+            font-weight: 500;
+            border-radius: 2px;
+        }
+
+        h3 {
+            color: #442839;
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            line-height: 2;
+            color: #666;
+        }
+
+        li:nth-last-child(1) {
+            color: #442839;
+        }
+
+        hr {
+            border-color: #ebeaea;
+            border-style: dashed;
+        }
+
+        .payment_form input,
+        select {
+            border: none;
+            background-color: #e9ecec;
+            padding: 15px 10px;
+            width: 32%;
+
+        }
+
+        .payment_form .form-input {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .payment_form button {
+            width: 100%;
+            border: none;
+            background-color: black;
+            color: #fff;
+            padding: 15px 0;
+            font-size: 15px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<div id="wrapper">
+<div class="payment">
+<div class="payment_product">
+<div>
+<h2>COFFEE</h2>
+<div class="price">
+RS 99
+</div>
+</div>
+</div>
+<div class="payment_bill">
+<h3>Receipt Summary</h3>
+<ul>
+<li>
+<span>99 x 1 item</span>
+<span>99.00</span>
+</li>
+<li>
+<span>Discount</span>
+<span>5.00</span>
+</li>
+<li>
+<span>Subtotal</span>
+<span>94.00</span>
+</li>
+<li>
+<span>Tax</span>
+<span>5.00</span>
+</li>
+<li>
+<span>Total</span>
+<span>99.00</span>
+</li>
+</ul>
+<hr>
+<h3>Payment informaion</h3>
+<form class="payment_form">
+<div class="form-input">
+<input type="text" placeholder="Card number" style="width:100%;">
+</div>
+<div class="form-input">
+<select>
+<option>month</option>
+</select>
+<select>
+<option>Year</option>
+</select>
+<input type="text" placeholder="Cvc">
+</div>
+<button type="submit">Order Now</button>
+</form>
+</div>
+</div>
+</div>
+</body>
+<script>
+    
+</script>
+
+</html>
